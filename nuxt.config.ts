@@ -1,13 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  build: {
-    transpile: [
-        "@headlessui/vue",
-        "@heroicons/vue",
-    ],
- },
-  css: ['~/assets/css/tailwind.css'],
+  compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
+  modules: ['nuxt-headlessui', '@nuxtjs/tailwindcss'],
+  headlessui: {
+    prefix: 'h-'
+  },
+  css: ["~/assets/css/tailwind.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
