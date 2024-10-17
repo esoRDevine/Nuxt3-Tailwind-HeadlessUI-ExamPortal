@@ -57,6 +57,7 @@
           </transition>
         </div>
       </HeadlessListbox>
+    </div>
   </div>
 </template>
 
