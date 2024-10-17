@@ -1,18 +1,3 @@
-<script setup>
-import { ref } from 'vue'
-import { CheckIcon, ChevronUpDownIcon } from '@heroicons/vue/20/solid'
-
-const people = [
-  { name: 'Wade Cooper' },
-  { name: 'Arlene Mccoy' },
-  { name: 'Devon Webb' },
-  { name: 'Tom Cook' },
-  { name: 'Tanya Fox' },
-  { name: 'Hellen Schmidt' }
-]
-const selectedPerson = ref(people[0])
-</script>
-
 <template>
   <div class="container mx-auto">
     <div class="w-72">
@@ -72,6 +57,20 @@ const selectedPerson = ref(people[0])
           </transition>
         </div>
       </HeadlessListbox>
-    </div>
   </div>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+import { CheckIcon, ChevronUpDownIcon } from '@heroicons/vue/20/solid'
+
+const people = [
+  { name: 'Wade Cooper' },
+  { name: 'Arlene Mccoy' },
+  { name: 'Devon Webb' },
+  { name: 'Tom Cook' },
+  { name: 'Tanya Fox' },
+  { name: 'Hellen Schmidt' }
+]
+const selectedPerson = ref(people[0])
+</script>
