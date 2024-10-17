@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['nuxt-headlessui', '@nuxtjs/tailwindcss'],
   headlessui: {
-    prefix: 'h-'
+    prefix: 'Headless'
   },
   css: ["~/assets/css/tailwind.css"],
   postcss: {
